@@ -86,7 +86,7 @@ This command launches SITL with a clean setup and quadcopter model.
 ### 2. Start MAVProxy
 
 First of all clone this repo https://github.com/mustafa-gokce/ardupilot-software-development.git inside another folder (you may name the folder whatever you like). Inside the folder you will find many folders like mavproxy , pymavlink etc.
-After that open another terminal and run the command : 
+After that open another terminal and run the command. This is MAVproxy relay command: 
 ``` mavproxy --master tcp:127.0.0.1:5760 --out 127.0.0.1:14550 --out 127.0.0.1:14560  (you may add python at that start of the command).```
 
 
@@ -102,7 +102,7 @@ So, MAVProxy works like a router between SITL and your ground station software.
 
 ### 3. RUN MAVPROXY WITH MAP AND CONSOLE
 
-Run this cmd in the command prompt. This is the MAVproxy relay command: 
+Run this cmd in the command prompt: 
 
 * mavproxy.py --master=tcp:127.0.0.1:5760 --console --map 
 
