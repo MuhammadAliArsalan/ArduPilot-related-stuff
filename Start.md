@@ -8,9 +8,6 @@ This file contains a reproducible workflow to run ArduCopter SITL (Software-in-t
 
 ## Quickstart (steps)
 
-* Put arducopter.exe and parameters/copter.parm into C:\ardu-sim.
-
-
 ## Prerequisites
 * Windows 10 / 11 
 
@@ -26,9 +23,7 @@ This file contains a reproducible workflow to run ArduCopter SITL (Software-in-t
 
 ## 1. Download SITL binaries
 
-Download the Windows SITL binaries and arducopter.exe from the official ArduPilot SITL build site
-
-``` https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/```
+Download the Windows SITL binaries and arducopter.exe from the official ArduPilot SITL build site https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/
 
 * Search for and download the ArduCopter.elf
 
