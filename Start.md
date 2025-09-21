@@ -22,9 +22,7 @@
 
 ## Download SITL binaries
 
-```Download the Windows SITL binaries and arducopter.exe from the official ArduPilot SITL build site```
-
-``` https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/```
+```Download the Windows SITL binaries and arducopter.exe from the official ArduPilot SITL build site``` https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/
 
 * Search for and download the ArduCopter.elf
 
