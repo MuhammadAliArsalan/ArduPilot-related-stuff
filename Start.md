@@ -72,7 +72,7 @@ when you run this command it will ask you to specify a vehicle model. Next , run
 
 ### Screenshot
 
-![SITL started](screenshots/SITL-start.png)
+![SITL started](screenshots/sitl-start.png)
 
 ```👉 Explanation of flags:```
 
@@ -130,6 +130,130 @@ Make sure you have following libraries installed. MAVProxy may require specific 
 * opencv-python==4.7.0.72 → used for MAVProxy’s camera/video modules.
 
 * pyparsing==3.0.9 → required by Matplotlib.
+
+## 4. Flying the Drone in SITL (via MAVProxy)
+
+Once you’ve started SITL and connected it through MAVProxy, you can now issue flight commands directly from the MAVProxy console.
+
+### 1. Basic Commands
+
+Inside the MAVProxy console (write all cmds in the command prompt , inside MAVProxy white-colore console you will see whether your cmds got accepted or not), 
+type:
+
+```help```
+
+👉 This lists all available commands.
+
+### 2. Arm the Drone
+
+Before takeoff, you must arm the motors:
+
+```arm throttle```
+
+
+👉 Explanation:
+
+arm → arms the motors.
+
+throttle → allows throttle input so the drone can take off.
+
+### 3. Change Flight Modes
+
+Set the drone’s behavior by changing its flight mode:
+
+* mode stabilize     
+* mode guided        
+* mode loiter      
+* mode rtl           
+* mode land          
+
+
+👉 Explanation:
+
+* stabilize → manual, pilot controls attitude.
+
+* guided → enables programmatic navigation (e.g., “fly to this GPS point”).
+
+* loiter → hover in place with GPS hold.
+
+* rtl → Return-to-Launch (fly home).
+
+* land → land at current location.
+
+### 4. Takeoff
+
+To make the drone take off:
+
+```takeoff 10```
+
+
+👉 The drone climbs to 10 meters altitude in GUIDED mode.
+
+⚠️ Make sure you are in GUIDED mode before issuing this command:
+
+Follow the sequence
+
+```mode guided```
+```arm throttle```
+```takeoff 10```
+
+### 5. Guided Navigation (Fly to GPS Point)
+
+Tell the drone to fly to a specific latitude, longitude, and altitude:
+
+```guided <lat> <lon> <alt>```
+
+Example:
+
+```guided 47.397742 8.545594 25```
+NOTE: Click on MAVProxy map window , it will show you coordinates, use that cooordinates to fly to that point
+
+
+👉 Explanation:
+
+* 47.397742 = latitude
+
+* 8.545594 = longitude
+
+* 25 = target altitude (in meters)
+
+The drone will autonomously fly to this location.
+
+### 6. Cancel Midway (Change Mode)
+
+If you want to stop the current mission or action, you may use one of the following:
+
+* mode loiter    
+* mode rtl       
+* mode land      
+* disarm         
+
+👉 disarm in SITL = instant stop (useful for emergencies).
+
+
+### 8. Monitor Drone Status
+
+You can check status info anytime:
+
+```status```
+
+
+👉 Shows battery, mode, GPS, altitude, etc.
+
+### 9. Visual Feedback
+
+If you started MAVProxy with --console --map, you’ll see:
+
+* A live console window showing status and logs.
+
+* A live map window with your drone’s position.
+
+
+
+
+
+
+
 
 
 
