@@ -38,7 +38,7 @@ Install the ArduCopter.elf inside C:\ardu-sim. After that change the name of fil
 
 * Click on this link https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/default_params/copter.parm , it will show all copter's paramteres. your job is to save this file inside the paramters folder. Don't forget to rename file as copter.parm (when you first save file, it will be saved as copter.parm.txt)
 
-## Screenshots
+### Screenshot
 
 ![setup binaries needed](screenshots/setup-binaries.png)
 
@@ -70,7 +70,7 @@ when you run this command it will ask you to specify a vehicle model. Next , run
 
 * arducopter -w -S --model + --speedup 1 --defaults parameters/copter.parm -I0
 
-## Screenshots
+### Screenshot
 
 ![SITL started](screenshots/SITL-start.png)
 
