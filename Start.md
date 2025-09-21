@@ -34,9 +34,9 @@ Download the Windows SITL binaries and arducopter.exe from the official ArduPilo
 
 Install the ArduCopter.elf inside C:\ardu-sim. After that change the name of file to arducopter and change the extension to .exe from .elf
 
-* After installing .dll files , create another folder inside C:\ardu-sim (or whatever teh folder name is ) and name it as parameters.
+* After installing .dll files , create another folder inside C:\ardu-sim (or whatever the folder name is ) and name it as parameters.
 
-* Click on this link https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/default_params/copter.parm , it will show all copter's paramteres. your job is to save this file inside the paramters folder. Don't forget to rename file as copter.parm (when you first save file, it will be saved as copter.parm.txt)
+* Click on this link https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/default_params/copter.parm , it will show all copter's paramteres. your job is to save this file inside the parameters folder. Don't forget to rename file as copter.parm (when you first save file, it will be saved as copter.parm.txt)
 
 ### Screenshot
 
@@ -60,9 +60,9 @@ you can run mavproxy.py globally (if that folder is in PATH) or run it with the 
 
 ## 3. STARTING THE SITL USING MAVPROXY
 
-### 1. Start the SIMUALTOR
+### 1. Start the SIMULATOR
 
- Inisde the folder C:\ardu-sim (or whatever you named the folder), go in the address bar and type cmd, it will open a temrinal inside that terminal , write the following command
+ Inside the folder C:\ardu-sim (or whatever you named the folder), go in the address bar and type cmd, it will open a terminal inside that terminal , write the following command
 
 * arducopter 
 
@@ -111,7 +111,7 @@ Run this cmd in the command prompt. This is the MAVproxy relay command:
 
 * mavproxy.py --master=tcp:127.0.0.1:5760 --console --map 
 
-(you can extend the above cmd to forward telemtery to another GCS like MP , search how to do that)
+(you can extend the above cmd to forward telemetry to another GCS like MP , search how to do that)
 
 The above command means:
 ```“Run MAVProxy using Python, connect it to a vehicle on TCP port 5760 (SITL or real autopilot), show the console for command input, and show a map for visual tracking.”```
@@ -137,7 +137,7 @@ Once you’ve started SITL and connected it through MAVProxy, you can now issue 
 
 ### 1. Basic Commands
 
-Inside the MAVProxy console (write all cmds in the command prompt , inside MAVProxy white-colore console you will see whether your cmds got accepted or not), 
+Inside the MAVProxy console (write all cmds in the command prompt , and inside MAVProxy white-color console you will see whether your cmds got accepted or not), 
 type:
 
 ```help```
@@ -206,7 +206,7 @@ Tell the drone to fly to a specific latitude, longitude, and altitude:
 Example:
 
 ```guided 47.397742 8.545594 25```
-NOTE: Click on MAVProxy map window , it will show you coordinates, use that cooordinates to fly to that point
+NOTE: Click on MAVProxy map window , it will show you coordinates, use that coordinates to fly to that point
 
 
 👉 Explanation:
