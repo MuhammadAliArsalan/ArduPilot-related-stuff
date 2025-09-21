@@ -6,10 +6,6 @@
 
 ```This repository contains a reproducible workflow to run ArduCopter SITL (Software-in-the-Loop) on Windows, control it with MAVProxy and forward telemetry to Mission Planner (or other GCS).```
 
-## Quickstart (steps)
-
-* Put arducopter.exe and parameters/copter.parm into C:\ardu-sim.
-
 
 ## Prerequisites
 * Windows 10 / 11 
@@ -58,5 +54,5 @@ you can run mavproxy.py globally (if that folder is in PATH) or run it with the 
 
 ## Screenshots
 
-![setup binaries needed](screenshots/setup binaries.png)
+![setup binaries needed](screenshots/setup-binaries.png)
 
