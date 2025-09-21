@@ -24,7 +24,7 @@ This repository contains a reproducible workflow to run ArduCopter SITL (Softwar
 
 * ArduCopter SITL binary for Windows (arducopter.exe)
 
-## Download SITL binaries
+## 1. Download SITL binaries
 
 Download the Windows SITL binaries and arducopter.exe from the official ArduPilot SITL build site
 
@@ -43,7 +43,7 @@ Install the ArduCopter.elf inside C:\ardu-sim. After that change the name of fil
 ![setup binaries needed](screenshots/setup-binaries.png)
 
 
-## Install MAVProxy
+## 2. Install MAVProxy
 
 ```Open an regular command prompt if you prefer and run```
 * python -m pip install --upgrade pip
@@ -58,7 +58,7 @@ NOTE: If "where mavproxy.py" returns a path
 
 you can run mavproxy.py globally (if that folder is in PATH) or run it with the full path.
 
-## STARTING THE SITL USING MAVPROXY
+## 3. STARTING THE SITL USING MAVPROXY
 
 ### 1. Start the SIMUALTOR
 
@@ -72,7 +72,7 @@ when you run this command it will ask you to specify a vehicle model. Next , run
 
 ### Screenshot
 
-![SITL started](screenshots/sitl-start.png)
+![SITL started](screenshots/sitl-setup.png)
 
 ```👉 Explanation of flags:```
 
