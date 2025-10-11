@@ -229,7 +229,7 @@ Drone is now in manual mode and you can fly it with RC or GCS commands.
 ### SEE the screenshots attached
 
 #### MISSION EDITOR
-![Mission-editor](screenshots/MIssion-Editor.png)
+![Mission-editor](screenshots/MIssion-editor.png)
 
 #### FLYING_IN_SITL
 ![flying-in-SITL](screenshots/flying-in-SITL.png)
