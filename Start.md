@@ -39,12 +39,11 @@ Install the ArduCopter.elf inside C:\ardu-sim. After that change the name of fil
 
 
 ## 2. Install MAVProxy
-
-```Open an regular command prompt if you prefer and run```
+Open an regular command prompt if you prefer and run
 * python -m pip install --upgrade pip
 * python -m pip install MAVProxy
 
-```Verify installation:```
+Verify installation:
 * python -m pip show MAVProxy
 * where mavproxy.py
 
@@ -59,27 +58,27 @@ you can run mavproxy.py globally (if that folder is in PATH) or run it with the 
 
  Inside the folder C:\ardu-sim (or whatever you named the folder), go in the address bar and type cmd, it will open a terminal inside that terminal , write the following command
 
-* arducopter 
+```arducopter ```
 
 when you run this command it will ask you to specify a vehicle model. Next , run the following command
 
-* arducopter -w -S --model + --speedup 1 --defaults parameters/copter.parm -I0
+``` arducopter -w -S --model + --speedup 1 --defaults parameters/copter.parm -I0```
 
 ### Screenshot
 
 ![SITL started](screenshots/sitl-setup.png)
 
-```👉 Explanation of flags:```
+👉 Explanation of flags:
 
-* -w → wipes/reset parameters to defaults.
-* -S → enable SITL console output.
-* --model + → selects a simple quadcopter (+ frame).
+* ```-w``` → wipes/reset parameters to defaults.
+* ```-S``` → enable SITL console output.
+* ```--model + ```→ selects a simple quadcopter (+ frame).
 
-*--speedup 1 → run simulator at normal speed (1×).
+* ```--speedup 1 ```→ run simulator at normal speed (1×).
 
-*--defaults parameters/copter.parm → load default parameters from file.
+* ```--defaults parameters/copter.parm ```→ load default parameters from file.
 
-* -I0 → vehicle instance 0 (important if you run multiple drones).
+* ``` -I0 ``` → vehicle instance 0 (important if you run multiple drones).
 
 This command launches SITL with a clean setup and quadcopter model.
 
