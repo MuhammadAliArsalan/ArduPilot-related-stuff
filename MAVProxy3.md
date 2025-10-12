@@ -38,6 +38,10 @@ This tells the drone to always use the closest Rally Point, no matter how far it
 
 By default, there may be a limit distance; setting to 0 disables the limit.
 
+### CONSOLE SCREENSHOT (HOW TO USE RALLY POINTS):
+
+![terminal-rally-points](screenshots/terminal-rally-points.png)
+
 ## Rally Commands in MAVProxy
 
 | Command                | Function                                                         |
