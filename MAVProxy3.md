@@ -77,3 +77,22 @@ If something goes wrong, instead of rushing all the way home (which might be dan
 ## MAP IN MAVPROXY SHOWING RALLY POINTS (GREEN FLAGS)
 
 ![Rally-points](screenshots/rally-points.png)
+
+## SAMPLE RALLY POINTS FILE_NAME
+| Index | Latitude    | Longitude    | Altitude (m) | Acceptance Radius (m) | Land Direction | Flags |
+|-------|------------|-------------|--------------|---------------------|----------------|-------|
+| 1     | -35.360614 | 149.162592  | 50.0         | 40.0                | 0.0            | 0     |
+| 2     | -35.362211 | 149.162295  | 50.0         | 40.0                | 0.0            | 0     |
+| 3     | -35.363752 | 149.163510  | 50.0         | 40.0                | 0.0            | 0     |
+
+![sample-Rally-points](screenshots/rallly-points-sample.png)
+
+### ✅ Explanation of columns:
+
+* Index – Rally Point number
+* Latitude – Decimal degrees
+* Longitude – Decimal degrees
+* Altitude (m) – Height for the Rally Point
+* Acceptance Radius (m) – How close the drone must get to consider the point reached
+* Land Direction – Approach angle (0 = default)
+* Flags – Additional options (0 = default behavior)
