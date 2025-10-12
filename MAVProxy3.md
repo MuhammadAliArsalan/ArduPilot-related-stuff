@@ -17,3 +17,59 @@ Rally Points are predefined safe locations where the drone can go instead of Hom
   * Copter: lands automatically at the Rally Point.
 
 Think of Rally Points like emergency safe landing zones for your drone.
+
+## 2️⃣ Rally Points in MAVProxy
+
+MAVProxy is a command-line tool that lets you control drones and send commands. Here’s how Rally Points are managed there:
+
+Starting MAVProxy with map & console:
+
+```mavproxy.py --master=127.0.0.1:14550 --console --map```
+
+* ```--console:``` enables the command-line interface.
+
+* ```--map: ``` shows a map so you can click to add Rally Points visually.
+
+#### Important Parameter:
+```param set RALLY_LIMIT_KM 0```
+
+
+This tells the drone to always use the closest Rally Point, no matter how far it is.
+
+By default, there may be a limit distance; setting to 0 disables the limit.
+
+## Rally Commands in MAVProxy
+
+| Command                | Function                                                         |
+|------------------------|------------------------------------------------------------------|
+| `rally list`           | Shows all Rally Points currently stored in the flight controller.|
+| `rally load FILE_NAME` | Loads Rally Points from a file into the flight controller.       |
+| `rally save FILE_NAME` | Saves the current Rally Points from the flight controller to a file.|
+| `rally clear`          | Deletes all Rally Points from the flight controller.             |
+| `rally add`            | Adds a Rally Point at a location you click on the map.           |
+| `rally remove INDEX`   | Removes a Rally Point at the given index (position in the list). |
+| `set rallyalt 50`      | Sets the default altitude for Rally Points (here 50 meters).     |
+
+## How It Works in Flight
+
+You define multiple safe landing points before flight.
+
+If the drone needs to RTL:
+
+* It chooses the nearest Rally Point.
+* Moves to it safely.
+* Then either loiters (Plane) or lands (Copter).
+
+This increases safety and flexibility, especially for long missions or risky environments.
+
+## Real-World Analogy
+
+Think of a drone as a person in a city:
+
+* Home point: your own house.
+* Rally Points: safe hotels or checkpoints along the way.
+
+If something goes wrong, instead of rushing all the way home (which might be dangerous), you go to the nearest safe checkpoint.
+## MAP IN MAVPROXY SHOWING RALLY POINTS (GREEN FLAGS)
+
+![Rally-points](screenshots/rally-points.png)
