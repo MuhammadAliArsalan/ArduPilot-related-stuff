@@ -42,7 +42,8 @@ arducopter.exe -w -S --model quad --speedup 1 --defaults parameters/copter.parm 
 
 Open a new terminal and run:
 
-```python -m MAVProxy.mavproxy ^
+```
+python -m MAVProxy.mavproxy ^
  --master=tcp:127.0.0.1:5760 ^
  --master=tcp:127.0.0.1:5770 ^
  --master=tcp:127.0.0.1:5780 ^
@@ -111,3 +112,27 @@ alllinks mode RTL
 * The PyPI help module error in MAVProxy can be ignored; it does not affect simulation.
 
 * Use alllinks for synchronized commands, vehicle n for individual control.
+
+## SCREENSHOTS
+
+* This output shows ArduCopter SITL starting a quadcopter simulation with SYSID 3, binding multiple TCP ports for MAVLink connections, loading default parameters, and waiting for internal systems to initialize.
+
+![cli](screenshots/cli%20pic3.png)
+
+* After running cmd to initialize mavproxy console and map 
+![mavproxy_cli](screenshots/ss1%20mavproxy.png)
+
+![mavproxy_cli2](screenshots/ss2%20mavproxy.png)
+
+* Issuing commands to multiple as well as individual drone (vehicle 2)
+![mavproxy_cli3](screenshots/mavprxy%20ss3.png)
+
+* Issuing cmd to single drone (vehicle 3)
+![mavproxy_cli4](screenshots/mavproxy%20cli4.png)
+
+* VISUALIZATION IN MAVProxy And MISSION PLANNER
+
+![mavproxy_cli5](screenshots/mavprxy%20map%201.png)
+
+![MP](screenshots/MP%20sim%201.png)
+
