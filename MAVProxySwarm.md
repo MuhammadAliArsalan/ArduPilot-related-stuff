@@ -119,18 +119,18 @@ alllinks mode RTL
 
 ![cli](screenshots/cli%20pic3.png)
 
-* After running cmd to initialize mavproxy console and map 
+**After running cmd to initialize mavproxy console and map**
 ![mavproxy_cli](screenshots/ss1%20mavproxy.png)
 
 ![mavproxy_cli2](screenshots/ss2%20mavproxy.png)
 
-* Issuing commands to multiple as well as individual drone (vehicle 2)
+**Issuing commands to multiple as well as individual drone (vehicle 2)**
 ![mavproxy_cli3](screenshots/mavprxy%20ss3.png)
 
-* Issuing cmd to single drone (vehicle 3)
+**Issuing cmd to single drone (vehicle 3)**
 ![mavproxy_cli4](screenshots/mavproxy%20cli4.png)
 
-* VISUALIZATION IN MAVProxy And MISSION PLANNER
+### VISUALIZATION IN MAVProxy And MISSION PLANNER
 
 ![mavproxy_cli5](screenshots/mavprxy%20map%201.png)
 
